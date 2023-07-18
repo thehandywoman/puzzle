@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    font-family:'Inter', sans-serif;
+	color: #000000;
+}
+
+
+#board {
+    width: 600px;
+    height: 800px;
+    border: 2px solid purple;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 300px;
+    height: 200px;
+}
+
+
+#pieces {
+position: absolute; /* ustawia pozycję elementu jako absolutną */
+    top: 120px; /* ustawia odległość od góry strony */
+    left: 5%; /* ustawia odległość od lewej strony */    
+width: 320px;
+    height: 630px;
+    border: 2px solid purple;
+    margin: 0 auto;
+ display: flex;
+    flex-direction: column; /* Ustawia elementy w kolumnie */
+    overflow-y: scroll; /* Umożliwia przewijanie */
+float: left
+
+}
+
+#pieces img {
+    width: 300px;
+    height: 200px;
+margin-top: 10px;
+margin-left: 10px;
+    border: 0.5px solid lightblue;
+}
+
+
+
+#pieces::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+#pieces::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#pieces::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#pieces::-webkit-scrollbar-button {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+#pieces::-webkit-scrollbar-button:start:decrement,
+#pieces::-webkit-scrollbar-button:end:increment {
+  display: block;
+  background-image: url('images/up.png');
+  background-repeat: no-repeat;
+}
+
+#pieces::-webkit-scrollbar-button:start:increment,
+#pieces::-webkit-scrollbar-button:end:decrement {
+  display: block;
+  background-image: url('images/down.png');
+  background-repeat: no-repeat;
+}
+
+
+img {
+    transition: transform 0.5s, background-size 0.5s; 
+  width: originalWidth;
+  height: originalHeight;}
+
+img.small {
+    transform: scale(0.8);
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#center-img {
+    max-width: 80%;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav1
+{ margin-top: 2%;
+margin-left: 3%;
+margin-right: 3%;
+}
+
+#nav2
+{ margin-top: -10%;
+margin-left: 3%;
+margin-right: 3%;}
+
+#logo {
+
+   	margin-top: 135px;
+	margin-left: 133px;
+	max-height: 400px;
+
+}
+
+#podtytul {
+	width: 348px;
+	height: 39px;
+	margin-left: 133px;
+	left: 133px;
+    	margin-top: 169px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: left;
+	
+}
+
+#main {
+	width: 1054px;
+	height: 564px;
+	margin-left: 133px;
+	margin-top: 106px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	text-align: left;
+}
